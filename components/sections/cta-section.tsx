@@ -76,7 +76,7 @@ export function CtaSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Button size="lg" variant="outline" className="border-white/20 text-black hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white/20  hover:bg-white/10">
                 Recevoir plus d'informations
               </Button>
             </motion.div>
