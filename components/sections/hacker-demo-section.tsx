@@ -133,7 +133,7 @@ export function HackerDemoSection() {
                     <Button
                       onClick={startHacking}
                       variant="outline"
-                      className="border-primary text-primary hover:bg-primary/10"
+                      className="border-primary text-primary hover:text-primary hover:bg-primary/10"
                     >
                       Lancer la simulation d'attaque
                     </Button>
