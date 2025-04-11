@@ -27,6 +27,28 @@ export function Header() {
     }, 100),
     [],
   )
+// Theme toggle state and handler
+const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+const toggleTheme = useCallback(() => {
+  const newTheme = theme === 'light' ? 'dark' : 'light'
+  setTheme(newTheme)
+  // Update document root class for theme
+  document.documentElement.classList.remove(theme)
+  document.documentElement.classList.add(newTheme)
+  // Store theme preference
+  localStorage.setItem('theme', newTheme)
+}, [theme])
+
+// Initialize theme from localStorage on mount
+useEffect(() => {
+  const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  
+  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light')
+  setTheme(initialTheme)
+  document.documentElement.classList.add(initialTheme)
+}, [])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
@@ -39,7 +61,8 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 will-change-transform ${
         scrolled ? "bg-background/80 backdrop-blur-lg border-b border-primary/10 py-2" : "bg-transparent py-4"
-      }`}
+        
+      } ${ theme === "dark" ? "bg-transparent" : "bg-background/80 backdrop-blur-lg border-b border-primary/10 py-2" }`  }
     >
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
