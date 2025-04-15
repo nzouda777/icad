@@ -29,46 +29,57 @@ export function ProgramSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           <ModuleCard
             icon={Network}
-            title="Module 1: Fondamentaux des réseaux"
+            title="Module 1: Initiation à la Cybersécurité"
             duration="4 semaines - 20 heures de vidéo + TP pratiques"
           >
-            <CheckItem>Architecture et topologies réseau</CheckItem>
-            <CheckItem>Protocoles TCP/IP et modèle OSI</CheckItem>
-            <CheckItem>Configuration des équipements réseau</CheckItem>
-            <CheckItem>Analyse de trafic et dépannage</CheckItem>
+            <CheckItem>Introduction à la cybersécurité </CheckItem>
+            <CheckItem>Types de cybermenaces et attaques </CheckItem>
+            <CheckItem>Mesures de sécurité pour protéger les informations personnelles et professionnelles </CheckItem>
+            <CheckItem>Carrières dans la cybersécurité </CheckItem>
           </ModuleCard>
 
           <ModuleCard
             icon={Shield}
-            title="Module 2: Sécurité des systèmes"
+            title="Module 2: Cisco Cybersecurity Essentials"
             duration="4 semaines - 18 heures de vidéo + labs pratiques"
           >
-            <CheckItem>Sécurisation des systèmes d'exploitation</CheckItem>
-            <CheckItem>Gestion des accès et des identités</CheckItem>
-            <CheckItem>Chiffrement et PKI</CheckItem>
-            <CheckItem>Détection et prévention des malwares</CheckItem>
+            <CheckItem>Introduction à la sécurité des réseaux et des informations </CheckItem>
+            <CheckItem>La protection des systèmes d'information </CheckItem>
+            <CheckItem>L'éthique et les lois en matière de cybersécurité </CheckItem>
+            <CheckItem>Techniques pour sécuriser les entreprises </CheckItem>
           </ModuleCard>
 
           <ModuleCard
             icon={LockKeyhole}
-            title="Module 3: Sécurité réseau avancée"
+            title="Module 3: Cisco Network Security"
             duration="5 semaines - 25 heures de vidéo + projets pratiques"
           >
-            <CheckItem>Configuration de firewalls et VPN</CheckItem>
-            <CheckItem>Systèmes IDS/IPS</CheckItem>
-            <CheckItem>Sécurité du Cloud et virtualisation</CheckItem>
-            <CheckItem>Sécurité des réseaux sans fil</CheckItem>
+            <CheckItem>Concepts fondamentaux de la sécurité réseau </CheckItem>
+            <CheckItem>Configuration et gestion des équipements Cisco </CheckItem>
+            <CheckItem>Résolution des problèmes de sécurité </CheckItem>
+            <CheckItem>Mise en œuvre de politiques de sécurité et protection des données </CheckItem>
           </ModuleCard>
 
           <ModuleCard
             icon={Terminal}
-            title="Module 4: Tests d'intrusion"
+            title="Module 4:  Cisco CyberOps Associate – CCNA Security "
             duration="5 semaines - 22 heures de vidéo + labs pratiques"
           >
-            <CheckItem>Méthodologie de pentest</CheckItem>
-            <CheckItem>Reconnaissance et collecte d'informations</CheckItem>
-            <CheckItem>Exploitation de vulnérabilités</CheckItem>
-            <CheckItem>Rédaction de rapports professionnels</CheckItem>
+            <CheckItem>Gestion des opérations de cybersécurité </CheckItem>
+            <CheckItem>Surveiller, détecter et répondre aux incidents de sécurité </CheckItem>
+            <CheckItem>Techniques avancées pour éliminer les menaces </CheckItem>
+            <CheckItem>Préparation pour l'examen Cisco CyberOps </CheckItem>
+          </ModuleCard>
+
+          <ModuleCard
+            icon={Terminal}
+            title="Module 5:  Cisco CCNA "
+            duration="5 semaines - 22 heures de vidéo + labs pratiques"
+          >
+            <CheckItem>Configuration et gestion des réseaux Cisco  </CheckItem>
+            <CheckItem>Introduction aux protocoles de routage et de commutation </CheckItem>
+            <CheckItem>Sécurisation des réseaux et des données </CheckItem>
+            <CheckItem>Introduction à l'automatisation des réseaux  </CheckItem>
           </ModuleCard>
         </div>
 
