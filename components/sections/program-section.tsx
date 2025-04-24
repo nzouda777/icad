@@ -26,7 +26,7 @@ export function ProgramSection() {
           subtitle="Un programme complet et structuré pour maîtriser tous les aspects de la cybersécurité"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 [&>*:last-child]:md:col-span-2 [&>*:last-child]:md:mx-auto [&>*:last-child]:md:max-w-[calc(50%-1rem)]">
           <ModuleCard
             icon={Network}
             title="Module 1: Initiation à la Cybersécurité"
@@ -44,8 +44,8 @@ export function ProgramSection() {
             duration="4 semaines - 18 heures de vidéo + labs pratiques"
           >
             <CheckItem>Introduction à la sécurité des réseaux et des informations </CheckItem>
-            <CheckItem>La protection des systèmes d'information </CheckItem>
-            <CheckItem>L'éthique et les lois en matière de cybersécurité </CheckItem>
+            <CheckItem>Protection des systèmes d'information </CheckItem>
+            <CheckItem>Éthique et les lois en matière de cybersécurité </CheckItem>
             <CheckItem>Techniques pour sécuriser les entreprises </CheckItem>
           </ModuleCard>
 

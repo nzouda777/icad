@@ -6,7 +6,7 @@ export function AnimatedBackground() {
   return (
     <div className="absolute inset-0 z-0">
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 dark:opacity-80 z-10"></div>
-      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"></div>
+      <div className="absolute inset-0 bg-[url('/career.jpg')] bg-cover bg-center"></div>
 
       {/* Animated background elements */}
       <motion.div

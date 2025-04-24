@@ -138,7 +138,7 @@ export function HeroSection() {
 
               <div className="relative bg-black/40 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/hero.jpg"
                   width={400}
                   height={400}
                   alt="Cybersécurité formation"
