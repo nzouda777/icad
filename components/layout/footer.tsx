@@ -21,21 +21,17 @@ export function Footer() {
           <FooterColumn title="Formation">
             <FooterLink href="#programme">Programme</FooterLink>
             <FooterLink href="#tarifs">Tarifs</FooterLink>
-            <FooterLink href="#">Financement</FooterLink>
-            <FooterLink href="#">Certifications</FooterLink>
           </FooterColumn>
 
           <FooterColumn title="Ressources">
-            <FooterLink href="#">Blog</FooterLink>
             <FooterLink href="#">Tutoriels</FooterLink>
             <FooterLink href="#faq">FAQ</FooterLink>
-            <FooterLink href="#">Support</FooterLink>
           </FooterColumn>
 
           <FooterColumn title="Contact">
-            <FooterLink href="#">contact@cyberformation.fr</FooterLink>
+            <FooterLink href="#">hello@infinityskils.com</FooterLink>
             <FooterLink href="#">01 23 45 67 89</FooterLink>
-            <FooterLink href="#">Paris, France</FooterLink>
+            <FooterLink href="#">Douala, Cameroun</FooterLink>
           </FooterColumn>
         </div>
 

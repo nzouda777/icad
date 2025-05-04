@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "CyberFormation - Formation en cybersécurité",
   description: "Formation professionnelle en cybersécurité pour tous les niveaux",
-    generator: 'v0.dev'
+    generator: 'Infinity Skils'
 }
 
 export default function RootLayout({
