@@ -84,7 +84,7 @@ Les cas concrets que nous mettrons en pratique vous rendra apte affronter les tÃ
           >
             <AnimatedGradientBorder>
               <Image
-                src="/it2.png"
+                src="/it2.jpg"
                 width={400}
                 height={400}
                 alt="Photo du formateur"
