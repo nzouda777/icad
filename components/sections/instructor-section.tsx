@@ -48,17 +48,19 @@ export function InstructorSection() {
 
             <motion.div className="space-y-4" variants={fadeIn}>
               <p>
-                Après avoir travaillé comme responsable sécurité pour plusieurs grandes entreprises du CAC 40, j'ai
-                décidé de partager mon expertise à travers cette formation complète.
+              Cela fait maintenant plus de 15 ans que je travaille dans le domaine de la sécurité en ligne. Entre autres structures, j'ai travaillé pour    ,      ou encore     .
+Ma grande expérience professionnelle tout comme les certifications      ,      et     que j'ai ; me font envisager la cybersécurité sous un angle plus pratique.
+Cette formation vous rendra apte à l'emploi, que vous ayez des prérequis dans le domaine ou pas. Que votre ambition soit professionnelle ou personnelle, je m'assure que vous terminiez avec la connaissance nécessaire pour atteindre vos objectifs. 
+Les cas concrets que nous mettrons en pratique vous rendra apte affronter les tâches qui vous attendent dans le milieu professionnel.
               </p>
-              <p>
+              {/* <p>
                 Certifié CISSP, CEH et OSCP, j'ai une approche pratique de la cybersécurité et je m'assure que mes
                 étudiants acquièrent des compétences directement applicables dans leur environnement professionnel.
               </p>
               <p>
                 Ma méthode pédagogique repose sur l'apprentissage par la pratique, avec de nombreux cas concrets et
                 exercices tirés de situations réelles rencontrées au cours de ma carrière.
-              </p>
+              </p> */}
             </motion.div>
 
             <motion.div className="flex flex-col sm:flex-row gap-3 pt-4" variants={fadeIn}>
@@ -82,7 +84,7 @@ export function InstructorSection() {
           >
             <AnimatedGradientBorder>
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/it2.png"
                 width={400}
                 height={400}
                 alt="Photo du formateur"

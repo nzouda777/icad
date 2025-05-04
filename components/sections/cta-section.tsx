@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ChevronRight, Calendar, LockKeyhole, Shield, Award } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { SectionTitle } from "@/components/atoms/section-title"
 import { AnimatedBackground } from "@/components/molecules/animated-background"
 import { CtaCard } from "@/components/molecules/cta-card"
@@ -61,15 +62,18 @@ export function CtaSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Button size="lg" className="group">
-                <span>Je m'inscris maintenant</span>
+              <Link 
+                href="https://forms.gle/yLWPf3NVP44hBrKp6"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 group"
+              >
+                <span className="text-white">Je m'inscris maintenant</span>
                 <motion.span
                   animate={{ x: [0, 5, 0] }}
                   transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, repeatType: "loop", repeatDelay: 1 }}
                 >
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </motion.span>
-              </Button>
+              </Link>
             </motion.div>
             <motion.div
               variants={scaleIn}

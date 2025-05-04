@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Shield, Menu, X, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { throttle } from "@/lib/utils"
+import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -13,6 +14,12 @@ import { NavLink } from "@/components/atoms/nav-link"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
@@ -27,28 +34,6 @@ export function Header() {
     }, 100),
     [],
   )
-// Theme toggle state and handler
-const [theme, setTheme] = useState<'light' | 'dark'>('light')
-
-const toggleTheme = useCallback(() => {
-  const newTheme = theme === 'light' ? 'dark' : 'light'
-  setTheme(newTheme)
-  // Update document root class for theme
-  document.documentElement.classList.remove(theme)
-  document.documentElement.classList.add(newTheme)
-  // Store theme preference
-  localStorage.setItem('theme', newTheme)
-}, [theme])
-
-// Initialize theme from localStorage on mount
-useEffect(() => {
-  const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-  
-  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light')
-  setTheme(initialTheme)
-  document.documentElement.classList.add(initialTheme)
-}, [])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
@@ -57,12 +42,17 @@ useEffect(() => {
     }
   }, [handleScroll])
 
+  if (!mounted) {
+    return null
+  }
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 will-change-transform ${
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-primary/10 py-2" : "bg-transparent py-4"
-        
-      } ${ theme === "dark" ? "bg-transparent" : "bg-background/80 backdrop-blur-lg border-b border-primary/10 py-2" }`  }
+        theme === "dark" 
+          ? "bg-zinc-900/90 text-white" 
+          : "bg-white/90 text-black"
+      } backdrop-blur-lg border-b border-primary/10 py-2`}
     >
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
@@ -75,8 +65,12 @@ useEffect(() => {
             <Shield className="h-7 w-7 text-primary relative z-10" />
           </motion.div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold leading-none">CyberFormation</span>
-            <span className="text-xs text-muted-foreground">Sécurité & Expertise</span>
+            <span className={`text-xl font-bold leading-none ${
+              theme === 'dark' ? 'text-white' : 'text-black'
+            }`}>CyberFormation</span>
+            <span className={`text-xs ${
+              theme === 'dark' ? 'text-zinc-300' : 'text-zinc-600'
+            }`}>Sécurité & Expertise</span>
           </div>
         </Link>
 
@@ -104,7 +98,11 @@ useEffect(() => {
 
       {/* Mobile Navigation - Simplified animation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-primary/10">
+        <div className={`md:hidden absolute top-full left-0 right-0 ${
+          theme === "dark" 
+            ? "bg-zinc-900/95" 
+            : "bg-white/95"
+        } backdrop-blur-lg border-b border-primary/10`}>
           <div className="container py-4 flex flex-col space-y-4">
             <NavLink href="#programme" onClick={toggleMenu}>
               Programme
