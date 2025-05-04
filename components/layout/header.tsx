@@ -50,7 +50,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 will-change-transform ${
         theme === "dark" 
-          ? "bg-zinc-900/90 text-white" 
+          ? "bg-black text-white" 
           : "bg-white/90 text-black"
       } backdrop-blur-lg border-b border-primary/10 py-2`}
     >
