@@ -35,7 +35,7 @@ export default function LandingPage() {
         <ProgramSection />
         <TestimonialsSection />
         <InstructorSection />
-        <PricingSection />
+        {/* <PricingSection /> */}
         <FaqSection />
         <CtaSection />
       </main>

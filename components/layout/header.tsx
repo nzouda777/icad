@@ -79,7 +79,7 @@ export function Header() {
           <NavLink href="#programme">Programme</NavLink>
           <NavLink href="#benefices">Bénéfices</NavLink>
           <NavLink href="#formateur">Formateur</NavLink>
-          <NavLink href="#tarifs">Tarifs</NavLink>
+          {/* <NavLink href="#tarifs">Tarifs</NavLink> */}
           <NavLink href="#faq">FAQ</NavLink>
         </nav>
 
