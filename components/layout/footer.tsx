@@ -20,7 +20,7 @@ export function Footer() {
 
           <FooterColumn title="Formation">
             <FooterLink href="#programme">Programme</FooterLink>
-            <FooterLink href="#tarifs">Tarifs</FooterLink>
+            {/* <FooterLink href="#tarifs">Tarifs</FooterLink> */}
           </FooterColumn>
 
           <FooterColumn title="Ressources">
@@ -31,7 +31,7 @@ export function Footer() {
           <FooterColumn title="Contact">
             <FooterLink href="#">hello@infinityskils.com</FooterLink>
             <FooterLink href="#">01 23 45 67 89</FooterLink>
-            <FooterLink href="#">Douala, Cameroun</FooterLink>
+            <FooterLink href="#">Montreal, Quebec</FooterLink>
           </FooterColumn>
         </div>
 

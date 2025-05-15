@@ -31,6 +31,7 @@ export function ProgramSection() {
             icon={Network}
             title="Module 1: Initiation à la Cybersécurité"
             duration="4 semaines - 20 heures de vidéo + TP pratiques"
+            price="153.00"
           >
             <CheckItem>Introduction à la cybersécurité </CheckItem>
             <CheckItem>Types de cybermenaces et attaques </CheckItem>
@@ -42,6 +43,7 @@ export function ProgramSection() {
             icon={Shield}
             title="Module 2: Cisco Cybersecurity Essentials"
             duration="4 semaines - 18 heures de vidéo + labs pratiques"
+            price="230.00"
           >
             <CheckItem>Introduction à la sécurité des réseaux et des informations </CheckItem>
             <CheckItem>Protection des systèmes d'information </CheckItem>
@@ -53,6 +55,7 @@ export function ProgramSection() {
             icon={LockKeyhole}
             title="Module 3: Cisco Network Security"
             duration="5 semaines - 25 heures de vidéo + projets pratiques"
+            price="275.00"
           >
             <CheckItem>Concepts fondamentaux de la sécurité réseau </CheckItem>
             <CheckItem>Configuration et gestion des équipements Cisco </CheckItem>
@@ -64,6 +67,7 @@ export function ProgramSection() {
             icon={Terminal}
             title="Module 4:  Cisco CyberOps Associate – CCNA Security "
             duration="5 semaines - 22 heures de vidéo + labs pratiques"
+            price="385.00"
           >
             <CheckItem>Gestion des opérations de cybersécurité </CheckItem>
             <CheckItem>Surveiller, détecter et répondre aux incidents de sécurité </CheckItem>
@@ -75,6 +79,7 @@ export function ProgramSection() {
             icon={Terminal}
             title="Module 5:  Cisco CCNA "
             duration="5 semaines - 22 heures de vidéo + labs pratiques"
+            price="336.00"
           >
             <CheckItem>Configuration et gestion des réseaux Cisco  </CheckItem>
             <CheckItem>Introduction aux protocoles de routage et de commutation </CheckItem>
